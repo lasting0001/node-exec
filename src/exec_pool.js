@@ -3,7 +3,7 @@
  */
 "use strict";
 
-
+var LinkedList = require('./linked_list');
 function Exec() {
     return {
         parallel: function (params) {
@@ -50,7 +50,7 @@ function Exec() {
                 return errorBack(new Error('params error'));
             }
             var over = 0;
-            var ll = new _LinkedList();
+            var ll = new LinkedList();
             var args = params.args || [];
             var entities = params.entities || [];
             for (var i = 0, len = fns.length; i < len; i++) {

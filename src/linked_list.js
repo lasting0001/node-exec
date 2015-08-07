@@ -50,4 +50,4 @@ function LinkedList() {
     return new _LinkedList();
 }
 
-global._LinkedList = LinkedList;
+exports.LinkedList = LinkedList;
