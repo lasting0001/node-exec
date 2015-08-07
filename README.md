@@ -41,9 +41,8 @@ _Exec.serial({fns: [func1, func2, func3], args: [null, null, {game_id: 1}], erro
 	使用eg：
 </p>
 <p>
-	<pre name="code" class="javascript">function func1() {
-	  require('exec');
-	    
+	<pre name="code" class="javascript">require('exec');
+function func1() {
     var params = arguments[0];
     setTimeout(function () {
         params &amp;&amp; params.callback(null, '1');
